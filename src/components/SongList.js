@@ -10,7 +10,7 @@ const SongList = ({songs}) => {
         <ul className='songListStyling'>
             {
                 songs.map((song) => 
-                    <Song song={song} />
+                    <Song song1={song} />
                     
             )
             }

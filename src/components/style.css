@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.songStyling {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.buttonStyling {
+    margin: 0 1rem;
+    background-color: rgb(0, 0, 89);
+    color:white;
+    font-family: 'Poppins';
+    border: none;
+    border-radius: 15px;
+    padding: 0.3rem;
+
+}
+
+.songListStyling {
+    list-style: none;
+}
+
+.hideCheckbox {
+    display: none;
+}
+
+.checkboxLabel {
+    background-color: white;
+    color: rgb(0, 0, 29);
+    padding: 0.3rem 0.6rem;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 29);
+    font-family: 'Poppins';
+    cursor: pointer;
+    
+}
+
+.hideCheckbox:checked + label {
+    background-color: rgb(0, 0, 29);
+    color: white;
+}
+
+.checkboxContainer {
+    margin: 0 1rem;
+}

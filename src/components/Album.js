@@ -1,11 +1,16 @@
 import React from 'react';
-
-const Album = (props) => {
+import SongList from './SongList';
+const Album = ({album}) => {
     
     return (
-        <img src={props.url}>
-
-        </img>
+        <div>
+            <h3>{album.name}</h3>
+            <p>{album.date}</p>
+            <SongList songs={album.songs} />
+            <img src={album.artwork}>
+                
+            </img>
+        </div>
     );
 }
 

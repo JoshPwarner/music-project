@@ -3,14 +3,14 @@ import { useState } from 'react';
 import Song from './Song';
 import './style.css';
 
-const SongList = (props) => {
+const SongList = ({songs}) => {
     
-   const [counter, setCounter] = useState(0);
+   
     return (
         <ul className='songListStyling'>
             {
-                props.songs.map((song) => 
-                    <Song songTitle={song} />
+                songs.map((song) => 
+                    <Song song={song} />
                     
             )
             }

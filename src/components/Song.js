@@ -3,7 +3,7 @@ import { useState } from 'react';
 import './style.css';
 import UpVoteButton from './UpVoteButton';
 
-const Song = (props) => {
+const Song = ({song}) => {
 
     const [ counter, setCounter ] = useState(0);
 
@@ -19,7 +19,7 @@ const Song = (props) => {
 
     return (
         <div className="songStyling">
-            <li>{props.songTitle}</li>
+            <li>{song}</li>
             <UpVoteButton handleChange={increaseUpvote} />
             <span>{counter}</span>            
         </div>

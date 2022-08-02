@@ -12,32 +12,25 @@ const eminem = {
   intro: "This is just a test to check if my JSX works",
   albums: [{name: "Curtain Call",   
             date: "",
-            songs: [],
+            songs: ['Lose Yourself', 'Like Toy Soliders'],
             artwork: 'https://m.media-amazon.com/images/I/7180kSiluwL._AC_SY450_.jpg'
            },
+           {
+            
+           }
           ]
   
 }
 
-const introEminem = "This is just a test to check if my JSX works";
+// const introEminem = "This is just a test to check if my JSX works";
 
-const songsEminem = ['Lose Yourself', 'Like Toy Soliders'];
+// const songsEminem = ['Lose Yourself', 'Like Toy Soliders'];
 
 
 function App() {
   return (
     <div>
-      <Artist name="Eminem">
-        <Album url="https://m.media-amazon.com/images/I/7180kSiluwL._AC_SY450_.jpg"/>
-
-        
-        <Intro intro={introEminem}/>
-
-        <SongList songs={songsEminem}/>
-
-        
-
-        
+      <Artist artist={eminem}>        
       </Artist>
       
       

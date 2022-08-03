@@ -1,9 +1,6 @@
-import './App.css';
 import Artist from './components/Artist';
-import Album from './components/Album';
-import Intro from './components/Intro';
-import SongList from './components/SongList';
-import UpVoteButton from './components/UpVoteButton';
+import AxiosTest from './components/AxiosTest';
+
 
 
 const eminem = {
@@ -34,8 +31,8 @@ const eminem = {
 function App() {
   return (
     <div>
-      <Artist artist={eminem}>        
-      </Artist>
+      <Artist artist={eminem}></Artist>
+      <AxiosTest/>
       
       
     </div>
